@@ -17,11 +17,8 @@ public class Main {
         int b = 10;
         int cou = 0;
         int day;
-        while (cou < 11) {
+        while (cou < 10) {
             day = a + (int) (Math.random() * b);
-            if (day > 7) {
-                continue;
-            } else {
                 switch (day) {
                     case 1:
                         System.out.println("Monday");
@@ -40,10 +37,12 @@ public class Main {
                         break;
                     case 6:
                         System.out.println("Saturday");
+                    case 7:
+                        System.out.println("Sunday");
                         break;
                     default:
+                        System.out.println("there is no such day");
                 }
-            }
             cou++;
         }
 
