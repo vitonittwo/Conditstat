@@ -16,9 +16,8 @@ public class Main {
         int a = 1;
         int b = 10;
         int cou = 0;
-        int day;
         while (cou < 10) {
-            day = a + (int) (Math.random() * b);
+            int day = a + (int) (Math.random() * b);
                 switch (day) {
                     case 1:
                         System.out.println("Monday");
@@ -37,13 +36,49 @@ public class Main {
                         break;
                     case 6:
                         System.out.println("Saturday");
+                        break;
                     case 7:
                         System.out.println("Sunday");
                         break;
                     default:
-                        System.out.println("there is no such day");
+                        System.err.println("Wrong number for a day: " + day);
+                        break;
                 }
             cou++;
+        }
+
+        {
+            int min = 1;
+            int max = 10;
+            for (int i = 0; i < 11; ++i) {
+                int day = min + (int) (Math.random() * max);
+                switch (day) {
+                    case 1:
+                        System.out.println("Monday");
+                        break;
+                    case 2:
+                        System.out.println("Tuesday");
+                        break;
+                    case 3:
+                        System.out.println("Wednesday");
+                        break;
+                    case 4:
+                        System.out.println("Thursday");
+                        break;
+                    case 5:
+                        System.out.println("Friday");
+                        break;
+                    case 6:
+                        System.out.println("Saturday");
+                        break;
+                    case 7:
+                        System.out.println("Sunday");
+                        break;
+                    default:
+                        System.err.println("Wrong number for a day: " + i);
+                        break;
+                }
+            }
         }
 
         String[] ch = {"J", "a", "v", "a", " ", "S", "w", "i", "t", "c", "h", " ", "S", "t", "a", "t", "e", "m", "e", "n", "t", "s"};
