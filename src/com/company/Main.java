@@ -84,7 +84,8 @@ public class Main {
         String[] ch = {"J", "a", "v", "a", " ", "S", "w", "i", "t", "c", "h", " ", "S", "t", "a", "t", "e", "m", "e", "n", "t", "s"};
         for (String cha : ch) {
             System.out.print(cha);
-        }
+                    }
+        System.out.print("\n");
     }
 }
 
